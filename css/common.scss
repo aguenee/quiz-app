@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed');
+
+html {
+  background: url("../images/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+body {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

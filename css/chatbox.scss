@@ -1,0 +1,146 @@
+.chatbox {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  margin: auto;
+  width: 100%;
+  max-width: 340px;
+  background: #f5f8fb;
+  border-radius: 10px;
+  box-shadow: 0 12px 24px 0 rgba(0,0,0,0.15);
+
+  fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  legend {
+    box-sizing: border-box;
+    border-radius: 10px 10px 0 0;
+    background: #2F3840;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+}
+
+.chatbox-content {
+  overflow-y: scroll;
+  height: 300px;
+  max-height: 300px;
+  padding: 10px;
+  display: block;
+}
+
+.chatbox-answer {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+  border-top: 1px dashed #9a9c9e;
+
+  input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px 10px;
+    border: 0;
+    font-size: 0.75em;
+  }
+
+  button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: 0;
+    border-radius: 0;
+    color: #5B9FBE;
+    background: transparent;
+    padding: 8px 10px;
+
+    i {
+      font-size: 2em;
+    }
+  }
+}
+
+.chatbox-answer--success,
+.chatbox-answer--time-elapsed {
+  opacity: 0.5;
+
+  button {
+    color: gray;
+    opacity: 0.5;
+  }
+}
+
+.chatbox-answer--error {
+  border-color: #cc0000;
+
+  input {
+    outline-color: #cc0000;
+  }
+
+  button {
+    color: #cc0000;
+  }
+}
+
+.bubble {
+  position: relative;
+  margin-bottom: 2px;
+
+  img {
+    border-radius: 50% 50% 0 50%;
+    box-shadow: rgba(0,0,0,0.15) 0px 1px 2px 0px;
+    height: 40px;
+    min-width: 40px;
+    padding: 3px;
+  }
+
+  p {
+    background: #1484A6;
+    border-radius: 18px 18px 18px 0;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.15);
+    color: #fff;
+    display: inline-block;
+    max-width: 50%;
+    margin: 0 0 0 5px;
+    overflow: hidden;
+    position: relative;
+    padding: 12px;
+  }
+
+}
+
+.bubble--bot {
+  text-align: left;
+}
+
+.bubble--user {
+  text-align: right;
+}
+
+/* animations */
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}

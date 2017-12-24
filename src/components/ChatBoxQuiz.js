@@ -58,7 +58,7 @@ class ChatBoxQuiz extends React.Component {
           bot={true}
           message={
             <p>
-              Alors, comme ça, tu veux réviser tes tables de multiplication ?
+              Alors, comme ça, tu veux t'améliorer en calcul mental ?
             </p>
           }
         />
@@ -221,7 +221,7 @@ class ChatBoxQuiz extends React.Component {
       <Bubble
         key={new Date().getTime()}
         bot={true}
-        message={<p>Es-tu prêt pour la question suivante ?&nbsp;&nbsp;🙂</p>}
+        message={<p>Es-tu prêt pour le calcul suivant ?&nbsp;&nbsp;🙂</p>}
       />
     );
 

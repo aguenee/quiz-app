@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 /* Custom components */
-import QuizMultiplications from './components/QuizMultiplications.js';
+import QuizArithmetic from './components/QuizArithmetic.js';
 /* Styles */
 import styles from './css/styles.scss';
 
@@ -13,7 +13,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <QuizMultiplications timePerQuestion={10} />
+      <QuizArithmetic timePerQuestion={10} />
     );
   }
 }

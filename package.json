@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --hot",
+    "deploy": "node_modules/webpack/bin/webpack.js -p --progress",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "audrey.guenee",
